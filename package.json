@@ -1,0 +1,27 @@
+{
+  "name": "orangehrm-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright E2E framework for OrangeHRM demo, built on Playwright best practices",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:trace": "playwright test --trace on",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://opensource-demo.orangehrmlive.com",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@playwright/test": "latest",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.0.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.0.0"
+  }
+}
